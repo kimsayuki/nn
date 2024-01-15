@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/img/icons8-team-7LNatQYMzm4-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  border: 1px solid #fbaca3;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #fac5c4a3;
+  padding: 22px;
+  width: 27%;
+  color: black;
+  position: absolute;
+  top: 25%;
+  left: 64%;
+}
+
+.container::before {
+  content: "";
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.container h1 {
+  font-family: 'Great Vibes', cursive;
+  width: 37%;
+  display: inline-block;
+  font-size: 40px;
+  border-bottom: 5px solid #fbaca3;
+  margin-bottom: 15px;
+  padding: 13px 0;
+  text-shadow: 1px 1px 1px black;
+}
+
+.box {
+  width: 100%;
+  margin: 22px 0px;
+  border-bottom: 2px solid #fbaca3;
+}
+
+.box input {
+  background: none;
+  width: 75%;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: 'Cherry Bomb One', cursive;
+}
+
+.box i {
+  width: 25px;
+  text-align: center;
+}
+
+.btn {
+  color: black;
+  cursor: pointer;
+  outline: none;
+  margin: 12px 0;
+  padding: 10px 21px;
+  border: 2px solid #fbaca3;
+  border-radius: 10px;
+  font-size: 18px;
+  background: none;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+.btn:hover {
+  opacity: 0.7;
+  color: black;
+  background: #fbaca3;
+  border: 2px solid black;
+
+}
+
+
+
+
+/* Style for the container holding the sidebar */
+.container1 {
+  height: 100vh;
+  /* Set the container to fill the full viewport height */
+  display: flex;
+  /* justify-content: center; */
+  /* Center the navbar horizontally */
+  align-items: center;
+  /* Center the navbar vertically */
+  /* background-color: #f0f0f0; */
+}
+
+/* Style for the sidebar */
+.sidebar {
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+}
+
+/* Style for the sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid white;
+  /* Set the underline color for hover and active states */
+}

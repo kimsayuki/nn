@@ -1,0 +1,62 @@
+/* Style for the container holding the sidebar */
+.container1 {
+    height: 100vh;
+    /* Set the container to fill the full viewport height */
+    display: flex;
+    /* justify-content: center; */
+    /* Center the navbar horizontally */
+    align-items: center;
+    /* Center the navbar vertically */
+    /* background-color: #f0f0f0; */
+}
+
+/* Style for the sidebar */
+.sidebar {
+    width: 40px;
+    /* background-color: #333; */
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px black;
+}
+
+/* Style for the sidebar links */
+.sidebar ul {
+    list-style: none;
+    padding: 14px 6.4px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom: 2px solid white;
+    background-color: rgb(255, 0, 60);
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px black;
+    border: 2px solid white;
+}
+
+.nimg {
+    height: 18px;
+    width: 27px;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Login Container */
+.container{
+    top: 25%;
+    left: 16%;
+    width: 67%;
+}

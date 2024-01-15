@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- <title>Element only Navigation on DOM</title> -->
+</head>
+
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        display: flex;
+        background: grey;
+        margin: 0;
+        padding: 12px 0;
+        color: white;
+        font-family: monospace;
+        font-size: 20px;
+    }
+
+    ul li{
+        list-style: none;
+        margin: 0 23px;
+        cursor: pointer;
+    }
+
+    ul li:hover{
+        color: black;
+    }
+
+    .container{
+        font-family: monospace;
+        font-size: 17px;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Hire Me</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p>Hey I am a good boy</p>
+        <p>so you can change navbar color so use this "changeBgRed()", but first you untick ul background grey in browser inspect/console</p>
+        <p>so you can change website data color so use this "changeBgYellow()"</p>
+    </div>
+
+    <script src="/30_Element only Navigation on DOM.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & Aftre Pseudo Selector</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome To Coding World</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo eos dolor animi officiis cum distinctio minus ex
+        amet? Temporibus, amet culpa?
+    </section>
+    <!-- <hr> hr for bottom line  -->
+
+    <!-- Box Shadow & Text Shadow -->
+    <div class="container1">
+        <div class="card" id="card-1">
+            <h2>This is Html Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit mollitia cumque sapiente repellendus, tenetur nisi a nobis corrupti distinctio dolorum maxime dolorem quas recusandae saepe quae pariatur ea! Cumque voluptates saepe quae maiores incidunt.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is CSS Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint deleniti similique sunt vel mollitia eius architecto voluptatem dolorem quod nihil dicta, soluta natus quos ea hic possimus amet rerum dignissimos iure repellat vitae?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is .JS Course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non neque accusamus provident nulla nemo est dolorem molestiae amet. Harum illum voluptatum placeat quas, quam aliquid rem corporis, temporibus est reprehenderit doloremque doloribus, consectetur mollitia!</p>
+        </div>
+    </div>
+
+<!-- Variable & Custom Properties     -->
+
+<div class="container2">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+    }
+
+    header::before {
+        background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center/cover;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .navigation {
+        font-size: 20px;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 23px;
+    }
+
+    section {
+        height: 344px;
+        /* border: 2px solid red; */
+        margin: 3px 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* section::before{
+        content: "This is before Content";
+    } */
+    /* section::after{
+        content: "This is somali";
+    } */
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /* Sidebar Menu using Html CSS & Javascript */
+    .container1{
+        display: flex;
+    }
+
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid tomato; */
+        background-color: burlywood;
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green; */
+        box-shadow: -7px -5px 10px tomato;
+        /* box-shadow: -7px -5px 10px 30px green; */
+        /* box-shadow: inset 13px 55px royalblue; */
+        /* box-shadow: 3px 5px springgreen, 13px 15px skyblue; */
+        /* box-shadow: 0px 15px springgreen, 13px 0px skyblue; */
+    }
+
+    .card h2{
+        text-shadow: -2px -2px 3px red;
+        color: black;
+    }
+  
+    /* Variable & Custom Properties   */
+
+    :root{
+        --primary-color: blue;
+        --danger-color: red;
+        --maxwidth: 333px;
+    }
+    .box{
+        --box-color: violet;
+        width: 200px;
+        height: 200px;
+        background-color: var(--box-color);
+        border: 2px solid var(--danger-color);
+        box-shadow: 3px 3px 3px var(--box-color);
+        margin: 2px 9px;
+    }
+
+    .container2{
+        max-width: var(--maxwidth);
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+    }
+</style>

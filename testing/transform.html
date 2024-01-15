@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box">
+            This is a box
+        </div>
+    </div>
+    <div class="container1">
+        <p class="p1"><strong class="strong1">Instagram:</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat atque dolorum quas unde facilis dignissimos harum, vitae quisquam, esse perferendis laudantium et incidunt cum autem a possimus, numquam repudiandae tempora! Accusantium pariatur reprehenderit doloribus.</p>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        font-family: monospace;
+    }
+
+    .container{
+        height: 80vh;
+        background-color: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1{
+        height: 50vh;
+        background-color: black;
+    }
+
+    .p1{
+        color: white;
+    }
+
+    .strong1{
+        color: hotpink;
+    }
+    .strong1:hover{
+        color: red;
+    }
+
+    #box{
+        display: flex;
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 2px solid black;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        /* animation-name: fortext; */
+        /* animation-name: fortext1; */
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        box-shadow: 7px 5px 80px black;
+    }
+    
+    #box:hover{
+        transform: rotate(360deg);
+        /* transform: skew(40deg); */
+        /* transform: scale(2); */
+        /* transform: translateX(123px); */
+        /* transform: translatey(123px); */
+        /* transform: translate(123px, 123px); */
+        color: white;
+        border: 2px solid white;
+        font-size: 25px;
+        box-shadow: 7px 5px 100px white;
+        width: 300px;
+        height: 300px;
+    }
+
+    @keyframes fortext {
+        0%{
+            font-size: 16px;
+            width: 200px;
+            height: 200px;
+        }        
+        50%{
+            font-size: 25px;
+            width: 300px;
+            height: 300px;
+        }
+        100%{
+            font-size: 16px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @keyframes fortext1 {
+        0%{
+            border-radius: 20px;
+        }
+        50%{
+            border-radius: 100px;
+        }
+        100%{
+            border-radius: 20px;
+        }
+    }
+</style>

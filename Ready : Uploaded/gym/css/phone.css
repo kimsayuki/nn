@@ -1,0 +1,89 @@
+.left {
+    left: 1px;
+}
+
+.left img {
+    width: 25px;
+    left: 30px;
+}
+
+.left div {
+    left: 20.2px;
+    /* display: inline-block; */
+    line-height: 19px;
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 14px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar li {
+    font-size: 16px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 1px 4px;
+}
+
+.mid{
+    display: block;
+    width: 100%;
+    margin: 75px -17px;
+    /* border: 2px solid rgb(30, 255, 0); */
+    font-family: 'Tilt Warp', cursive;
+}
+
+.right{
+    position: absolute;
+    right: 6px;
+    top: 21px;
+    display: inline-block;
+    /* border: 2px solid rgb(0, 170, 255); */
+}
+
+.btn{
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 5px 6px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.container{
+    border: 2px solid white;
+    margin: 75px 35px;
+    padding: 40px;
+    width: 61%;
+    border-radius: 77px;
+    font-family: 'Tilt Warp', cursive;
+    /* box-shadow: 10px 10px rgb(70, 69, 69); */
+}
+
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 211px;
+    padding: 9px;
+    border: 2px solid black;
+    margin: 3px;
+    border-radius: 10px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.container1{
+    border: 2px solid white;
+    margin: 75px 35px;
+    padding: 40px;
+    width: 61%;
+    border-radius: 77px;
+    font-family: 'Tilt Warp', cursive;
+    /* box-shadow: 10px 10px rgb(70, 69, 69); */
+}

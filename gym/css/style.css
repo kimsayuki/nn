@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(/gym/bg.jpg);
+    color: white;
+}
+
+.left{
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    display: inline-block;
+    /* border: 2px solid red; */
+}
+
+.left img{
+    position: relative;
+    left: 34px;
+    /* display: inline-block; */
+    width: 60px;
+    filter: invert(100%);
+}
+
+.left div{
+    position: relative;
+    left: 20.2px;
+    /* display: inline-block; */
+    line-height: 19px;
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 26px;
+}
+
+.mid{
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    /* border: 2px solid rgb(30, 255, 0); */
+    font-family: 'Tilt Warp', cursive;
+}
+
+.right{
+    position: absolute;
+    right: 34px;
+    top: 33px;
+    display: inline-block;
+    /* border: 2px solid rgb(0, 170, 255); */
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover, .navbar li a.active{
+    color: grey;
+    text-decoration: underline;
+}
+
+.btn{
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(42, 41, 41);
+}
+
+.container{
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 70px;
+    width: 45%;
+    border-radius: 77px;
+    font-family: 'Tilt Warp', cursive;
+    /* box-shadow: 10px 10px rgb(70, 69, 69); */
+}
+
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 190px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 3px;
+    border-radius: 10px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.container button{
+    margin: 6px;
+}
